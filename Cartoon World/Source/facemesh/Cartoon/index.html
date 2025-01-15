@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script defer language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script defer language="javascript" type="text/javascript" src="detection.js"></script>
+  <script defer language="javascript" type="text/javascript" src="filters.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Video Feed -->
+  <video id="video" autoplay muted playsinline></video>
+
+  <!-- Toolbar -->
+  <div id="toolbar">
+    <button id="toggleMangaEffect" class="Buttons">Toggle Manga Effect</button>
+    <button id="toggleCartoonEdges" class="Buttons">Toggle Cartoon Edges</button>
+    <button id="saveSnapshot" class="Buttons">Save Snapshot</button>
+    <button id="startRecording" class="Buttons">Start/Stop Recording</button>
+  </div>
+  
+  <canvas id="canvas" width="1280" height="720"></canvas>
+  
+</body>
+</html>

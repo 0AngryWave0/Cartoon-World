@@ -1,0 +1,177 @@
+body {
+  background-color: #121212; /* Darker background for modern look */
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+#canvas {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  border: 5px solid #5a6faa; /* Softer color for the border */
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+#video {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  border: 5px solid #5a6faa;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.valueDisplay {
+  position: relative;
+  margin-left: 1350px;
+  color: #ffffff;
+  font-size: 12pt;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.Slider {
+  -webkit-appearance: none;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 1350px;
+  margin-bottom: 12px;
+
+  background: linear-gradient(to right, #6a89cc, #a29bfe); /* Modern gradient */
+  height: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.Slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f0932b; /* Softer bright thumb color */
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.imageButtons {
+  position: relative;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #636e72; /* Neutral button background */
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.imageButtons:hover {
+  background-color: #0984e3; /* Highlight on hover */
+}
+
+#screenshot_button {
+  margin-left: 1350px;
+  background: url('/images/screenshot.png') no-repeat center;
+  background-size: 60%;
+}
+
+#save_drawing_button {
+  margin-left: 20px;
+  background: url('/images/savejson.png') no-repeat center;
+  background-size: 60%;
+}
+
+#index_UP_button {
+  margin-left: 20px;
+  background: url('/images/shapeindex_up.png') no-repeat center;
+  background-size: 60%;
+}
+
+#index_DOWN_button {
+  margin-left: 20px;
+  background: url('/images/shapeindex_down.png') no-repeat center;
+  background-size: 60%;
+}
+
+
+.Buttons:hover {
+  background: linear-gradient(to right, #74b9ff, #55efc4); /* Hover effect */
+  color: #ffffff;
+}
+
+#edit_button {
+  margin-left: 1350px;
+  margin-bottom: 20px;
+  width: 220px;
+  border-color: #55efc4;
+  background: linear-gradient(to right, #81ecec, #55efc4);
+  color: #2d3436;
+}
+
+#complete_button {
+  margin-left: 1350px;
+  border-color: #74b9ff;
+  background: linear-gradient(to right, #dfe6e9, #74b9ff);
+  color: #2d3436;
+  width: 120px;
+}
+
+#undo_button {
+  margin-left: 10px;
+  border-color: #fab1a0;
+  background: linear-gradient(to right, #ffeaa7, #fab1a0);
+  color: #2d3436;
+  width: 80px;
+}
+
+#delete_button {
+  margin-left: 10px;
+  border-color: #d63031;
+  background: linear-gradient(to right, #fab1a0, #d63031);
+  color: #ffffff;
+  width: 90px;
+}
+
+#toolbar {
+  position: fixed;
+  top: 10%;
+  right: 20px;
+  width: 220px; /* Slightly wider for balance */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Add more spacing between buttons */
+  background: linear-gradient(to bottom, #2d3436, #636e72); /* Gradient background */
+  border: 2px solid #5a6faa; /* Match the video and canvas borders */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.Buttons {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #b2bec3, #636e72); /* Subtle gradient */
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Buttons:hover {
+  background: linear-gradient(to right, #74b9ff, #55efc4); /* Highlight on hover */
+  color: #2d3436;
+}
+
+.Buttons:active {
+  background: linear-gradient(to right, #55efc4, #74b9ff); /* Slightly reversed gradient for active state */
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+}
